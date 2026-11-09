@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>에임 테스트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>에임 테스트</h1>
+
+    <div class="info">
+      <span>점수: <strong id="score">0</strong></span>
+      <span>남은 시간: <strong id="time">30</strong>초</span>
+    </div>
+
+    <button id="startButton">게임 시작</button>
+
+    <div id="gameArea" aria-label="에임 테스트 게임 영역">
+      <button id="target" aria-label="타겟" hidden></button>
+    </div>
+
+    <div id="result" hidden>
+      <h2>게임 종료!</h2>
+      <p>점수: <strong id="finalScore">0</strong></p>
+      <p>정확도: <strong id="accuracy">0%</strong></p>
+      <p>최고 기록: <strong id="highScore">0</strong></p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
